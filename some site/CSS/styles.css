@@ -1,0 +1,425 @@
+html {
+    background: #f7f7f7;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image:url(../images/background5.png);
+    max-width: 100%;
+    margin: 0 auto;
+    color:black;
+}
+
+/* header, footer part */
+
+header {
+    color: rgb(5, 5, 5);
+    background-image:url(../images/background5.png);
+    padding:0px ;
+
+}
+
+footer {
+    color: rgb(5, 5, 5);
+    background-image:url(../images/background3.png);
+    position:absolute;
+    width:100%;
+    padding:20px 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer li{
+    list-style:none;
+    padding:5px;
+}
+
+a{
+    text-decoration:solid;
+    color:black;
+}
+
+a:hover{
+    color: #c50909;
+}
+
+header li {
+    display:inline;
+    margin: 5px;
+    font-size: 1.7ch;
+}
+
+header h1, nav{
+    display:inline-block;
+    padding:10px;
+    
+}
+
+header h1 {
+    width:70%;
+}
+
+h1{
+    font-size: 7ch;
+}
+
+main {
+    width:1000px;
+    display:inline-block;
+    padding: 10px;
+}
+
+aside{
+    width:280px;
+    display:inline-block;
+    vertical-align:top;
+    padding: 25px;
+    position:sticky;
+    top:10px;
+    bottom: 10px;
+    left:10px;
+}
+
+
+aside li{
+    padding:10px;
+}
+
+/*prduct classes */
+
+.product {
+    border: 3px solid rgb(7, 6, 6);
+    width: 250px;
+    height:500px;
+    margin: 10px;
+    position: relative;
+    padding: 10px;
+    display:inline-block;
+    text-align: center;
+}
+
+.card {
+    width: 240px;
+    margin: 5px;
+    position: relative;
+    padding: 0px;
+    display:inline-block;
+}
+
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    z-index: auto;
+}
+.card:hover .img-top {
+    display: inline-block;
+    width: 250px;
+    padding: 0px;
+    margin: auto 0;
+
+    
+}
+
+/*prduct detail page */
+
+.product-detail {
+    width:400px;
+    height:600px;
+    padding:10px;
+    margin-left:550px;
+    margin-top:20px;
+    
+}
+
+.productimg{
+    max-width: 50%;
+    padding:5px;
+    float:left; 
+}
+
+.productbord{
+    border: 1px solid rgb(7, 6, 6);
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.img-rounded {
+    border: 0.5px solid #ddd;
+    padding: 1px;
+    width: 400px;
+  }
+  
+  .img-rounded:hover {
+    box-shadow: 0 0 0px 2px rgba(5, 62, 247, 0.534);
+  }
+
+
+.button {
+    padding:6px;
+    margin:5px;
+    display:inline-block;
+}
+
+.button:last-of-type{
+    background: #0e69e9;
+    color:#f7f7f7;
+}
+
+.button:hover{
+    color:#c50909;
+}
+
+.next {
+    display:inline-block;
+    padding:10px;
+    margin-left:16ch;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3ch;
+}
+
+.previous {
+    align-items: center;
+    display:flex;
+    background-color: none;
+    border: 1px solid #1915e7;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #1915e7;
+    cursor: pointer;
+    padding: 14px 22px;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 25%;
+    text-decoration: inherit;
+    transition: all .2s;
+    margin-left:260px;
+    margin-top:35ch;
+    font-family: Inter, sans-serif;
+    font-size:22px;
+    width:50%;
+}
+
+.previous:active,
+.previous:hover {
+  outline: 0;
+}
+
+.previous:hover {
+  background-color: #1915e7;
+  color:white;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+.back {
+    align-items: center;
+    background-color: none;
+    border: 1px solid #1915e7;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #1915e7;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    justify-content: center;
+    line-height: 25px;
+    max-width: 25%;
+    margin-left:290px;
+    padding: 10px 10px;
+    text-decoration: inherit;
+    transition: all .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.back:active,
+.back:hover {
+  outline: 0;
+}
+
+.back:hover {
+  background-color: #1915e7;
+  color:white;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+
+h6 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:7ch;
+    position:relative;
+    text-align:center;
+    animation-name:hump;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hump{
+    0%{
+        color:black;
+
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color:red;
+    }
+    75%{
+        color:red;
+    }
+    100%{
+        color:black;
+    }
+}
+
+
+/* Contacts page */
+
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+    margin-left: 100px;
+
+}
+
+form > div {
+    margin: 10px 0;
+}
+
+.inline label {
+    display: inline-block;
+    width: 200px;
+}
+
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    padding: 10px;
+    width: 450px;
+}
+
+.button-2 {
+  align-items: center;
+  background-color: none;
+  border: 1px solid #1915e7;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #1915e7;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 25%;
+  margin-left:260px;
+  padding: 14px 22px;
+  text-decoration: inherit;
+  transition: all .3s;
+  width: 50%;
+}
+
+.button-2:active,
+.button-2:hover {
+  outline: 0;
+}
+
+.button-2:hover {
+  background-color: #1915e7;
+  color:white;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+.button-3 {
+    align-items: center;
+    background-color: none;
+    border: 1px solid #1915e7;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #1915e7;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 25%;
+    margin-left:600px;
+    padding: 14px 22px;
+    text-decoration: inherit;
+    transition: all .2s;
+    width: 50%;
+  }
+  
+  .button-3:active,
+  .button-3:hover {
+    outline: 0;
+  }
+  
+  .button-3:hover {
+    background-color: #1915e7;
+    color:white;
+    border-color: rgba(0, 0, 0, 0.19);
+  }
+  
+  
+/* BMI Calculator */
+
+.container {
+    font-size:2ch;
+
+}
+
+#result {
+    font-size:4ch;
+}
+
+#height, #weight {
+    padding: 5px;
+    width: 200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button-4{
+    align-items: center;
+    background-color: none;
+    border: 1px solid #1915e7;
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-left:170px;
+    text-decoration: inherit;
+    transition: all .2s;
+
+}
+
+.button-4:active,
+.button-4:hover {
+  outline: 0;
+}
+
+.button-4:hover {
+  background-color: #1915e7;
+  color:white;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+.bmi{
+    width:700px;
+    margin-left:270px;
+}

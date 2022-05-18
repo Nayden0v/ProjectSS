@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SUMMER SALE : Contacts</title>
+</head>
+
+<link rel="stylesheet" href="CSS/styles.css">
+<link rel="stylesheet" href="CSS/lightbox.css">
+<body>
+
+    <header>
+        <h1>SUMMER SALE</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="index.html">Cart &#128722;</a></li>
+        </ul>
+        </nav>
+        <input type="search" placeholder="Search...">
+    </header>
+
+
+<!--Contacts-->
+    <main>
+        <h2>Contact us:</h2>
+
+        <form>
+
+            <div class="inline"> 
+                <label for="name">Name: </label><input type="text" placeholder="Enter your name" id="name" name="name">
+            </div>
+
+            <div class="inline"> 
+                <label for="email">Email:</label> <input type="text" placeholder="Enter your email" id="email" name="email">
+            </div>
+
+            <div class="inline">
+                <label for="msg">Message: </label><textarea cols="30" rows="5"></textarea id="msg" name="msg">
+            </div>
+
+
+            <div class="inline">
+                <label for="subject">Subject:</label>
+                <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
+                <datalist id="subjects">
+                    <option value="returns">
+                    <option value="faulty_item">
+                    <option value="delivery">
+                    <option value="order_tracking">
+                    <option value="advice">
+                    <option value="other">   
+                </datalist>
+            </div>
+
+            <div>
+                <p>Subscribe to future offers by:</p>
+                <label for="newsletter">SMS</label>
+                <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+                <label for="email">Email</label>
+                <input type="checkbox" id="email" name="subscribe" value="email">
+                <label for="viber">Viber</label>
+                <input type="checkbox" id="email" name="subscribe" value="email">
+            </div>
+
+            <div>
+                <p>How would you like us to respond?</p>
+                <label for="phoneResponse">Phone</label>
+                <input type="radio" id="phoneResponse" name="response" value="phone">
+                <label for="emailResponse">Email</label>
+                <input type="radio" id="phoneResponse" name="response" value="email">
+            </div>
+
+            <input type="number" placeholder="Enter your phone number" id="phonenumber" name="phonenumber">
+
+            <div>
+                <input type="reset">
+                <a href="index.html" class="button">Submit</a>
+            </div>
+        </form>
+
+        <p><iframe style="float:cener; margin-left: 100px" width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJe6TSfoCPqkARW_OTonUf7bk&key=AIzaSyCYHaH4rmiy5TzoZdpzX6f55rF8rH3tNog" allowfullscreen></iframe></p>
+        <a href="index.html" class="button-3">&larr; Back</a>
+    </main>
+
+
+    <footer>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="index.html">Cart &#128722;</a></li>
+        </ul>
+        </nav>
+    </footer>
+</body>
+</html>
